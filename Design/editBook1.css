@@ -1,0 +1,107 @@
+* {
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+body
+{
+    background-image: url('pic/books.jpg');
+    background-size: cover;
+}
+nav
+{
+    width: 10%; 
+    height: 100vh;
+    float: left;
+    background-color: rgb(112, 128, 144, 0.6);
+    position: fixed;
+    text-align: center;
+}
+nav ul {list-style: none;}
+nav li 
+{
+    text-align: center;
+    border-bottom: 1px solid white
+
+}
+nav ul li a
+{
+     color: white;
+     text-decoration: none;
+     text-transform: uppercase;
+     padding: 15px;
+     display: inline-block;
+     width: 100%;
+}
+nav ul li a:hover
+{
+    background-color: rgb(78, 75, 75);
+}
+#logo{
+    height: 100px;
+    border-bottom: 1px solid white;
+    height: 99px;
+    width: 99px;
+    border-radius: 10%;
+}
+main
+{
+    width: 90%;
+    height: 100vh;
+    float: right;
+    padding: 10px ;
+    text-align: center;
+    
+}
+footer
+{  
+    float: right;
+    width: 90%;
+    padding: 0px; 
+    background-color: rgb(112, 128, 144, 0.6);
+}
+
+footer a img
+{
+    display: inline;
+    height: 3vh;
+    width: 2%;    
+}
+h2
+{
+    text-decoration:underline;
+}
+#edits
+{
+    padding-top: 40px;
+    width: 100%;
+    text-align: center;
+}
+#picc
+{
+    width:50% ;
+    float: left;
+    text-align: center;
+}
+#picc img
+{
+    border-radius: 10%;
+}
+#editBox
+{
+    float: right;
+    width: 50%;
+    text-align: center;
+}
+
+button
+{
+    background-color: rgba(111, 128, 144, 0.9); color: black;
+    font-size: 20px 40px;
+}
+button:hover
+{
+    background-color: rgb(255, 255, 255);
+}

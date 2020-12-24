@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beks</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="editBook1.css">
+    <link rel="icon" href="pic/beks.jpg">
+</head>
+<body>
+    <nav>
+        <img id="logo" src="pic/beks3.png.png" alt="logo">
+        <ul>
+            <li><a href="#">Sign in</a> </li>
+            <li><a href="#">Register</a> </li>
+            <li> <a href="mybag.html">My Bag</a></li>
+            <li> <a href="users.html">Users</a></li>
+        </ul>
+        
+    </nav>
+    <main>
+        <h2>Edit Book Information</h2>
+        <div id=edits>
+            <div id="picc">
+                <img src="pic/book1.jpg" alt="book1">
+            </div>
+            <div id="editBox">
+                <table>
+                    <thead>
+                        <th>Item that you're changing</th>
+                        <th>What did you type</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Name: </td>
+                            <td>
+                                <input type="text" id="name" placeholder=" name">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ISBN: </td>
+                            <td>
+                                <input type="number" id="isbn" placeholder="isbn" minlength="13">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Author: </td>
+                            <td>
+                                <input type="text" id="author" placeholder="author">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Year: </td>
+                            <td>
+                                <input type="date" id="year" placeholder="year" >
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Pages: </td>
+                            <td>
+                                <input type="number" id="pages" placeholder="number of pages" min="0">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Letter: </td>
+                            <td>
+                                <select name="Letter" id="LetterSel">
+                                    <option value="Latin">Latin</option>
+                                    <option value="Cyrillic">Cyrillic</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Language: </td>
+                            <td>
+                                <input type="text" id="language" placeholder="language">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Price: </td>
+                            <td>
+                                <input type="number" id="price" placeholder="price">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Binding type: </td>
+                            <td>
+                                <select name="type" id="type">
+                                    <option value="soft">Soft</option>
+                                    <option value="hard">Hard</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Book rating: </td>
+                            <td>
+                                <select name="rating" id="rating">
+                                    <option value="5">5</option>
+                                    <option value="4">4</option>
+                                    <option value="3">3</option>
+                                    <option value="2">2</option>
+                                    <option value="1">1</option>
+                                </select>
+                            </td>
+                        </tr>
+                    
+                    </tbody>
+                </table>
+                <br>
+                <button>Submit changes</button>
+
+            </div>
+
+        </div>
+
+    </main>
+    <footer>
+        <a href="https://www.twitter.com/" target="_blank"><img src="pic/twitter.png"></a>
+        <a href="https://www.facebook.com/"target="_blank"><img src="pic/fb.jpg"></a>
+    </footer>
+</body>
+</html>
