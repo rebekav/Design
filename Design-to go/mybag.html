@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beks</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="mybag.css">
+    <link rel="icon" href="pic/beks.jpg">
+</head>
+<body>
+    <nav>
+        <img id="logo" src="pic/beks3.png.png" alt="logo">
+        <ul>
+            <li> <button class="open-button" onclick="openForm()">Sign in</button>
+                <div class="form-popup" id="myForm">
+                <form id="loginForm" action="https://bookstore-6100c-default-rtdb.firebaseio.com/korisnici.json" method="GET" class="form-container">
+                  <h1>Sign In</h1>
+              
+                  <label for="username"><b>Username</b></label>
+                  <input id="txtUsername"type="text" placeholder="Enter Username" name="username" required>
+              
+                  <label for="password"><b>Password</b></label>
+                  <input id="txtPassword" type="password" placeholder="Enter Password" name="password" required>
+              
+                  <button type="submit" class="btn">Login</button>
+                  <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+              </div>
+            </li>
+            <li> 
+                  <button class="open-button" onclick="openForm1()">Sign Up</button>
+                <div class="form-popup" id="myForm1">
+                <form name="registracija" onsubmit="return validations()" class="form-container">
+                  <h1>Sign Up</h1>
+
+                  <label for="name"><b>Name</b></label>
+                  <input id="txtName"type="text" placeholder="Enter Name" name="name" >
+
+                  <label for="surname"><b>Surname</b></label>
+                  <input id="txtSurname"type="text" placeholder="Enter Surname" name="surname" >
+
+                  <label for="adress"><b>Adress</b></label>
+                  <input id="txtAdress"type="text" placeholder="Enter Adress" name="adress" >
+
+                  <label for="email"><b>Email</b></label>
+                  <input id="txtEmail"type="text" placeholder="Enter Email" name="email" >
+
+                  <label for="birthday"><b>Birth date</b></label>
+                  <input id="txtbday"type="text" placeholder="Enter Birth Date" name="bday" >
+
+                  <label for="pnumber"><b>Phone number</b></label>
+                  <input id="txtNumb"type="text" placeholder="Enter Phone number" name="pnumber" >
+              
+                  <label for="username"><b>Username</b></label>
+                  <input id="txtUsername"type="text" placeholder="Enter Username" name="username" >
+              
+                  <label for="psw"><b>Password</b></label>
+                  <input id="txtPassword" type="password" placeholder="Enter Password" name="password" >
+
+
+              
+                  <button type="submit" class="btn">Sign Up</button>
+                  <button type="submit" class="btn cancel" onclick="closeForm1()">Close</button>
+                </form>
+              </div>
+            </li>
+            
+            <li> <a href="users.html">Users</a></li>
+        </ul>
+        
+    </nav>
+    <main>
+        <div>
+            <h2>My Bag</h2>
+        </div>
+    </main>
+
+    <div id="mainDiv">  
+        <table>
+            <thead>
+                <tr id="titleRow">
+                    <th></th>
+                    <th></th>
+                    <th class="top">Book Name</th>
+                    <th class="top">Price</th>
+                    <th class="top">Quantity</th>
+                    <th class="top">Delete</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="row">
+                    <td id="number">1.</td>
+                    <td id="picture">
+                       <a href="book1review.html"> <img class="imgg" src="pic/book1.jpg" alt="book"></a>
+                    </td>
+                    <td id="name"><p id="him">Ildefonso Falcones de Sierra <br>La catedral del mar</p> </td>
+                    <td id="price">20$</td>
+                    <td id="howMany">4</td>
+                    <td id="deleteBook">
+                        <img src="pic/delete.png" height="50px" width="50px"  alt="trash">
+                    </td>
+                </tr>
+                <tr id="row">
+                    <td id="number">2.</td>
+                    <td id="picture">
+                        <img class="imgg"src="pic/book2.jpg" alt="book">
+                    </td>
+                    <td id="name"><p id="him">Ildefonso Falcones de Sierra <br>La mano de Fátima</p> </td>
+                    <td id="price">21$</td>
+                    <td id="howMany">1</td>
+                    <td id="deleteBook">
+                        <img src="pic/delete.png" height="50px" width="50px" alt="trash">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div> 
+
+    <footer>
+        <a href="https://www.twitter.com/" target="_blank"><img src="pic/twitter.png"></a>
+        <a href="https://www.facebook.com/"target="_blank"><img src="pic/fb.jpg"></a>
+    </footer>
+    
+    <script src="validations.js"><script>
+
+    
+</body>
+<script>function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+  
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }
+</script>
+<script>function openForm1() {
+    document.getElementById("myForm1").style.display = "block";
+  }
+  
+  function closeForm1() {
+    document.getElementById("myForm1").style.display = "none";
+  }
+</script>
+<script src="login.js"></script>
+</html>

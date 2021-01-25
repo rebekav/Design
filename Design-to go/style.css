@@ -1,0 +1,195 @@
+* {
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+body
+{
+    background-image: url('pic/books.jpg');
+    background-size: cover;
+}
+nav
+{
+    width: 10%; 
+    height: 100vh;
+    float: left;
+    background-color: rgb(112, 128, 144, 0.6);
+    position: fixed;
+    text-align: center;
+}
+nav ul {list-style: none;}
+nav li 
+{
+    text-align: center;
+    border-bottom: 1px solid white;
+
+}
+nav ul li a
+{
+     color: white;
+     text-decoration: none;
+     text-transform: uppercase;
+     padding: 15px;
+     display: inline-block;
+     width: 100%;
+}
+nav ul li a:hover
+{
+    background-color: rgb(78, 75, 75);
+}
+#logo{
+    height: 100px;
+    border-bottom: 1px solid white;
+    height: 99px;
+    width: 99px;
+}
+main
+{
+    width: 90%;
+    /*height: 100vh;*/
+    float: right;
+    padding: 10px ;
+    text-align: center;
+    
+}
+#knjige
+{
+    width: 90%;
+   
+}
+h1
+{
+    color: rgb(78, 75, 75);
+    text-align: center;
+    float: none;
+    margin-bottom: 8px;
+    
+    
+}
+h2
+{
+    background-color: rgb(112, 128, 144, 0.6);
+
+    text-align: center;
+    color: white;
+    margin-bottom: 8px;
+}
+h3
+{
+    text-decoration: overline;
+    margin-bottom: 8px;
+}
+#divKnjiga
+{
+    width: 30%;
+    padding: 5%;
+    display: inline-block;
+    text-align: center;
+
+}
+img
+{
+    height: 30vh;
+    border-radius: 10%;
+
+}
+p
+{
+    font-weight: bold;
+}
+
+footer
+{
+    
+    float: right;
+    width: 90%;
+    padding: 0px; 
+    background-color: rgb(112, 128, 144, 0.6);
+    
+
+}
+
+footer a img
+{
+    display: inline;
+    height: 3vh;
+    width: 2%;
+}
+/*css za login*/
+.open-button {
+    background-color: rgba(111, 128, 144, 0.9); 
+    color: white;
+     text-decoration: none;
+     text-transform: uppercase;
+     padding: 15px;
+     display: inline-block;
+     width: 100%;
+     border: none;
+  }
+  
+  
+  .form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    overflow-y: scroll !important;
+  }
+  
+  
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  
+  .form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    /*margin: 5px 0 22px 0;*/
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  .form-container .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+  
+  .form-container .cancel {
+    background-color: red;
+  }
+  
+  
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+
+
+
+@media screen and (max-width: 700px)
+{
+
+    /* NECE STA GOD DA SAM PROBALA */
+
+
+    
+}

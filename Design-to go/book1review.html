@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beks</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="book1review.css">
+    <link rel="icon" href="pic/beks.jpg">
+</head>
+<body>
+    <nav>
+        <img id="logo" src="pic/beks3.png.png" alt="logo">
+        <ul>
+            <li> <button class="open-button" onclick="openForm()">Sign in</button>
+                <div class="form-popup" id="myForm">
+                <form id="loginForm" action="https://bookstore-6100c-default-rtdb.firebaseio.com/korisnici.json" method="GET" class="form-container">
+                  <h1>Sign In</h1>
+              
+                  <label for="username"><b>Username</b></label>
+                  <input id="txtUsername"type="text" placeholder="Enter Username" name="username" required>
+              
+                  <label for="password"><b>Password</b></label>
+                  <input id="txtPassword" type="password" placeholder="Enter Password" name="password" required>
+              
+                  <button type="submit" class="btn">Login</button>
+                  <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+              </div>
+            </li>
+            <li> 
+                  <button class="open-button" onclick="openForm1()">Sign Up</button>
+                <div class="form-popup" id="myForm1">
+                    <form name="registracija"   onsubmit="return validations()" class="form-container">
+                        <h1>Sign Up</h1>
+      
+                        <label for="name"><b>Name</b></label>
+                        <input id="txtName"type="text" placeholder="Enter Name" name="name" >
+      
+                        <label for="surname"><b>Surname</b></label>
+                        <input id="txtSurname"type="text" placeholder="Enter Surname" name="surname" >
+      
+                        <label for="adress"><b>Adress</b></label>
+                        <input id="txtAdress"type="text" placeholder="Enter Adress" name="adress" >
+      
+                        <label for="email"><b>Email</b></label>
+                        <input id="txtEmail"type="text" placeholder="Enter Email" name="email" >
+      
+                        <label for="birthday"><b>Birth date</b></label>
+                        <input id="txtbday"type="text" placeholder="Enter Birth Date" name="bday" >
+      
+                        <label for="pnumber"><b>Phone number</b></label>
+                        <input id="txtNumb"type="text" placeholder="Enter Phone number" name="pnumber" >
+                    
+                        <label for="username"><b>Username</b></label>
+                        <input id="txtUsername"type="text" placeholder="Enter Username" name="username" >
+                    
+                        <label for="psw"><b>Password</b></label>
+                        <input id="txtPassword" type="password" placeholder="Enter Password" name="password" >
+      
+
+
+              
+                  <button type="submit" class="btn">Sign Up</button>
+                  <button type="submit" class="btn cancel" onclick="closeForm1()">Close</button>
+                </form>
+              </div>
+            </li>
+            <li> <a href="mybag.html">My Bag</a></li>
+            <li> <a href="users.html">Users</a></li>
+        </ul>
+        
+    </nav>
+    <main>
+        <h2>Book description</h2>
+        <div>
+            
+           <a href="bookstore.html"> <img src="pic/book1.jpg" alt="book"></a>
+        </div>
+        <div id="desc"> 
+			
+            <div id="text">
+                <table>
+                    <thead>
+                        <th>Book</th>
+                        <th>Informations</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Name: </td>
+			                <td>La catedral del mar</td>
+                        </tr>
+                        <tr>
+                            <td>ISBN: </td>
+			                <td>1234567891234</td>
+                        </tr>
+                        <tr>
+                            <td>Publishing house: </td>
+			                <td>Beks</td>
+                        </tr>
+                        <tr>
+                            <td>The Author: </td>
+			                <td>Ildefonso Falcones de Sierra</td>
+                        </tr>
+                        <tr>
+                            <td>Pages: </td>
+			                <td>552</td>
+                        </tr>
+                        <tr>
+                            <td>Year of publishing: </td>
+			                <td>2006</td>
+                        </tr>
+                        <tr>
+                            <td>Letter: </td>
+			                <td>Latin</td>
+                        </tr>
+                        <tr>
+                            <td>Language: </td>
+			                <td>Serbian</td>
+                        </tr>
+                        <tr>
+                            <td>Price: </td>
+			                <td>20$</td>
+                        </tr>
+                        <tr>
+                            <td>Binding type: </td>
+			                <td>Soft</td>
+                        </tr>
+			            <tr>
+                            <td>Book rating: </td>
+			                <td>5</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br><br><br>
+                <a href="editBook1.html"> <button class="btn" >Change book information</button></a>
+                <button class="btn" onclick="pitanje()">Add to My Bag</button>
+            </div>
+        </div>
+        
+        
+        <div id="description">   
+            <p> Description <br><br>
+                Cathedral of the Sea (Spanish: La catedral del mar) is a 2006 historical novel by Spanish author Ildefonso Falcones.
+                Iy's a thrilling historical novel of friendship and revenge, plague and hope, love and war, set in the golden age of 14th-century Barcelona. 
+                Arnau Estanyol arrives in Barcelona and joins the powerful guild of stone-workers building the magnificent cathedral of Santa Maria del Mar, while his adoptive brother Joan studies to become a priest. As Arnau prospers, he secretly falls in love with a forbidden woman.
+                 When he is betrayed and hauled before the Inquisitor, he finds himself face-to-face with his own brother.
+                 Will he lose his life just as his beloved cathedral is finally completed, or will his brother spare him?
+                
+            </p>
+            
+
+        </div>
+        
+
+
+    </main>
+    <footer>
+        <a href="https://www.twitter.com/" target="_blank"><img src="pic/twitter.png"></a>
+        <a href="https://www.facebook.com/"target="_blank"><img src="pic/fb.jpg"></a>
+    </footer>
+    
+    <script src="validations.js"><script>
+</body>
+<script>function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+  
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }
+</script>
+<script>function openForm1() {
+    document.getElementById("myForm1").style.display = "block";
+  }
+  
+  function closeForm1() {
+    document.getElementById("myForm1").style.display = "none";
+  }
+</script>
+<script src="login.js"></script>
+</html>
